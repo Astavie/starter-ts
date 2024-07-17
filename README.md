@@ -13,7 +13,7 @@ _description_
 
 ## License
 
-[MIT](./LICENSE) License © 2023-PRESENT [Astavie](https://github.com/astavie)
+[MIT](./LICENSE) License © 2024-PRESENT [Astavie](https://github.com/astavie)
 
 <!-- Badges -->
 
