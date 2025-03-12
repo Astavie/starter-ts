@@ -2,7 +2,7 @@
   "name": "pkg-placeholder",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.6.1",
+  "packageManager": "pnpm@10.6.2",
   "description": "_description_",
   "author": "Astavie <astavie@pm.me>",
   "license": "MIT",
@@ -38,12 +38,10 @@
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",
     "@antfu/ni": "catalog:cli",
-    "@antfu/utils": "catalog:utils",
-    "@types/js-yaml": "catalog:testing",
+    "@antfu/utils": "catalog:inlined",
     "@types/node": "catalog:types",
     "bumpp": "catalog:cli",
     "eslint": "catalog:cli",
-    "js-yaml": "catalog:testing",
     "lint-staged": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
     "tinyexec": "catalog:utils",
@@ -52,7 +50,8 @@
     "unbuild": "catalog:cli",
     "vite": "catalog:cli",
     "vitest": "catalog:testing",
-    "vitest-package-exports": "catalog:testing"
+    "vitest-package-exports": "catalog:testing",
+    "yaml": "catalog:testing"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
