@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/release-23.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/release-25.05";
   };
 
   outputs = { self, nixpkgs }:
@@ -14,12 +14,13 @@
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = with pkgs.nodePackages; pkgs.mkShell {
           packages = [
+            pnpm
             nodejs
             typescript-language-server
           ];
           shellHook = ''
             if [ ! -d "node_modules" ]; then
-              ${pnpm}/bin/pnpm i
+              pnpm i
             fi
             PATH=$PWD/node_modules/.bin:$PATH
           '';
